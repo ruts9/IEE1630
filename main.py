@@ -13,7 +13,7 @@ Ubidots_token = "BBFF-xxxxx"
 
 # INIT UART
 pycom.heartbeat(False)
-# Set the baudrate to 9600, and TX to pin 22 and RX to 21
+# Set the baudrate to 9600, and TX to pin 22 and RX to 21 (Corresponding to G9 and G8 on the development board)
 uart = UART(1, baudrate=9600, pins=('P22', 'P21'))
 print("UART INIT DONE")
 
